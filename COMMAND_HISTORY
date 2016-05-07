@@ -1,0 +1,212 @@
+bundle update
+ll
+vim Gemfile
+bundle update
+cd ..
+cd tdr
+vim Gemfile
+ruby -v
+bi
+vim Gemfile
+cd app/assets/
+treee
+tree
+cd stylesheets/
+mv application.css.scss application.scss 
+mv scaffolds.css.scss scaffolds.scss 
+ll
+vim application.scss 
+cd ..
+ll
+cd ..
+ll
+tree lib/
+vim config/application.rb 
+vim config/initializers/secret_token.rb
+vim ../common_db/config/initializers/session_store.rb 
+vim ../common_db/config/secrets.yml 
+cp ../common_db/config/secrets.yml config/
+vim config/initializers/secret_token.rb 
+ag secret_key ../common_db/
+vim config/initializers/devise.rb 
+vim config/secrets.yml 
+rake secret
+vim config/secrets.yml 
+vim config/initializers/devise.rb 
+vim config/secrets.yml 
+vim Gemfile
+bundle update devise
+guard
+im exit
+exit
+vim R
+vim Rakefile 
+vim app/controllers/application_controller.rb 
+ll
+vim config.ru 
+vim config/application.rb 
+vim config/initializers/pr
+vim config/initializers/pro
+vim config/environments/production.rb 
+vim config/application.rb 
+vim ../common_db/config/application.rb 
+vim config/application.rb 
+vim config/boot.rb 
+vim config/database.yml 
+vim config/environment
+vim config/environment.rb 
+vim config/environments/development.rb 
+vim config/initializers/assets.rb
+cp ../common_db/config/initializers/cookies_serializer.rb config/initializers/
+cp ../common_db/config/initializers/filter_parameter_logging.rb config/initializers/
+vim config/initializers/inflections.rb 
+cp ../common_db/config/initializers/inflections.rb config/initializers/
+rm config/initializers/secret_token.rb 
+rm config/initializers/session_store.rb 
+vim config/initializers/session_store.rb 
+cp ../common_db/config/initializers/wrap_parameters.rb config/initializers/
+vim config/routes.rb 
+vim config/secrets.yml 
+cp ../common_db/public/404.html public/
+cp ../common_db/public/422.html public/
+cp ../common_db/public/500.html public/
+ll
+rm script/
+gits
+guard
+exitr
+srails s
+ll
+srails c
+rails s -p 3001
+ll
+cd ..
+cd tdr
+rails
+rails s
+srake rails:update:bin
+vim app/models/user.rb 
+ag default_scope app/models/
+vim app/models/com
+vim app/models/company.rb 
+vim app/models/com
+vim app/models/company.rb 
+vim app/models/*
+vim app/models/mail_log.rb 
+ag scope app/models/
+vim app/models/site_task.rb 
+ag "scope :" app/models/
+vim app/models/site_task.rb 
+vim Gew
+vim Gemfile
+bi
+be arel_convert
+be arel_convert all
+be arel_convert all app/
+vim Gemfile
+bi
+arel_convert all ./
+ll
+arel_convert all app/
+arel_convert app/
+vim app/models/user.rb 
+vim app/models/*
+gits
+vim app/models/*
+git checkout app/models/
+gits
+vim Gemfile
+bi
+vim Gemfile
+bi
+vim Gemfile
+bi
+vim Gemfile
+bi
+arel_convert app/models/
+be arel_convert app/models/
+vim app/models/auth.rb 
+git checkout app/models/
+ll app/models/
+bundle update arel_converter
+be arel_convert app/models/
+vim app/models/user.rb 
+gits
+git diff app/models/user.rb
+guard
+ll
+bundle rails:update:bin
+rake rails:update:bin
+guard
+vim app/models/user.rb 
+ag default_scope app/models/
+vim app/models/checknreview
+vim app/models/checknreview.rb 
+vim app/models/company.rb 
+vim app/models/site.rb 
+smigrate
+vim app/models/com
+vim app/models/company.rb 
+ag conditions app/models/
+ag include app/models/
+vim app/models/checknreview_site.rb 
+vim db/schema.rb 
+vim app/models/checknreview_site.rb 
+ag company_id app/models/
+vim app/models/task.rb 
+vim app/models/review.rb 
+vim app/models/checknreview_site.rb 
+vim app/models/task
+vim app/models/task.rb 
+vim app/models/user.rb 
+vim Gemfile
+vim app/models/user.rb 
+vim db/schema.rb 
+vim app/models/weekly_workload.rb 
+ag deleted_at
+ag deleted_at app/
+vim app/controllers/reports_controller.rb 
+vim config/initializers/pr
+vim config/environments/production.rb 
+vim config/initializers/assets.rb 
+vim app/models/user.rb 
+vim app/models/mail_log.rb 
+vim app/models/user.rb 
+vim app/models/mail_log.rb 
+ag has_and_belongs
+ag has_and_belongs app/
+ag has_and_belongs app/models/
+vim app/models/com
+vim app/models/company.rb 
+vim app/models/person.rb 
+ag deliver app/
+grep -rl 'deliver ' apps/my_app/ | xargs sed -i 's/deliver/deliver_now/g'
+grep -rl 'deliver' apps/my_app/ | xargs sed -i 's/deliver/deliver_now/g'
+grep -rl 'deliver ' app/ lib/ | xargs sed -i 's/deliver/deliver_now/g'
+grep -rl 'deliver' app/ lib/ | xargs sed -i 's/deliver/deliver_now/g'
+vim app/mailers/application_mailer.rb 
+gits
+vim app/mailers/review_mailer.rb 
+ll app/mailers/
+ll app/views/
+git checkout app/views/review_mailer
+ag ReviewMailer
+mv app/views/checknreview_mailer/ app/views/review_mailer
+gits
+vim app/mailers/review_mailer.rb 
+vim app/views/review_mailer/new_checknreview.html.slim 
+vim app/views/review_mailer/record_drawings_required.html.slim 
+vim app/mailers/review_mailer.rb 
+vim app/views/review_mailer/record_drawings_required.html.slim 
+vim app/models/review_mai
+vim app/mailers/review_mailer.rb 
+mv app/views/review_mailer/record_drawings_required.html.slim app/views/review_mailer/review_required.html.slim
+cd app/views/review_mailer/
+mv review_required.html.slim review_submitted.html.slim
+tdr
+vim ../common_db/Gemfile.lock 
+vim Gemfile.lock 
+gits
+vim config/environments/production.rb 
+vim config/environments/test.rb 
+
