@@ -1,20 +1,22 @@
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rails_cleaner/version.rb'
+$LOAD_PATH.unshift(File.expand_path('../lib', __FILE__)) unless $LOAD_PATH.include?(lib)
+require 'rails_upgrade/version.rb'
 
 Gem::Specification.new do |s|
   s.name        = 'rails_cleaner'
   s.version     =  RailsCleaner::VERSION
   s.author	= "Weston Ganger"
   s.email       = 'westonganger@gmail.com'
-  s.homepage 	= 'https://github.com/westonganger/rails_cleaner'
+  s.homepage 	= 'https://github.com/westonganger/rails_upgrade'
   
-  s.summary     = "Command line tool for cleaning up Rails applications"
-  s.description = "Command line tool for cleaning up Rails applications"
+  s.summary     = "Command line tool for cleaning up & upgrading Rails applications"
+  s.description = "Command line tool for cleaning up & upgrading Rails applications"
   s.files = Dir.glob("{lib/**/*}") + %w{ LICENSE README.md Rakefile CHANGELOG.md }
   s.test_files  = Dir.glob("{test/**/*}")
 
-  s.add_runtime_dependency 'commander'
+  s.add_dependency 'ruby2ruby'
+  s.add_dependency 'ruby_parser'
+  s.add_dependency 'logging'
+  s.add_dependency 'commander'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'minitest'
