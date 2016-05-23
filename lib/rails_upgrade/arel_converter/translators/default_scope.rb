@@ -1,7 +1,7 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     module Translator
-      class Scope < Base
+      class DefaultScope < Base
 
         def process_call(exp)
           @options = Options.translate(exp.pop) if exp[1] == :default_scope
@@ -17,7 +17,7 @@ module RailsCleaner
 
         def format_options(options)
           return if options.nil? || options.empty?
-          " { #{options.strip} }")
+          " { #{options.strip} }"
         end
 
       end

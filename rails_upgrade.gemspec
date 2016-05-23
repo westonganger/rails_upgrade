@@ -1,9 +1,10 @@
-$LOAD_PATH.unshift(File.expand_path('../lib', __FILE__)) unless $LOAD_PATH.include?(lib)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rails_upgrade/version.rb'
 
 Gem::Specification.new do |s|
-  s.name        = 'rails_cleaner'
-  s.version     =  RailsCleaner::VERSION
+  s.name        = 'rails_upgrade'
+  s.version     =  RailsUpgrade::VERSION
   s.author	= "Weston Ganger"
   s.email       = 'westonganger@gmail.com'
   s.homepage 	= 'https://github.com/westonganger/rails_upgrade'

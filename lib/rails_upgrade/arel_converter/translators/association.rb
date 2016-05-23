@@ -1,10 +1,12 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     module Translator
       class Association < Base
 
         def process_call(exp)
           @association_type ||= exp[1]
+          @scopes ||= nil
+          @options ||= nil
           super
         end
 
@@ -32,8 +34,8 @@ module RailsCleaner
         end
 
         def post_processing(new_scope)
-          new_scope.gsub!(/has_(many|one|and_belongs_to_many)\((.*)\)$/, 'has_\1 \2')
-          new_scope.gsub!(/belongs_to\((.*)\)$/, 'belongs_to \1')
+          new_scope.sub!(/has_(many|one|and_belongs_to_many)\((.*)\)$/, 'has_\1 \2')
+          new_scope.sub!(/belongs_to\((.*)\)$/, 'belongs_to \1')
           [new_scope, format_scope(@scopes), @options].compact.join(', ')
         end
 

@@ -1,4 +1,4 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     class ActiveRecordFinder < Base
 
@@ -12,7 +12,7 @@ module RailsCleaner
       end
 
       def process_line(finder)
-        RailsCleaner::ArelConverter::Translator::Finder.translate(finder)
+        RailsUpgrade::ArelConverter::Translator::Finder.translate(finder)
       end
 
     end

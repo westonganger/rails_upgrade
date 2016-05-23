@@ -1,4 +1,4 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     class Replacement
       include Comparable
@@ -8,6 +8,7 @@ module RailsCleaner
       def initialize(old_content=nil, new_content=nil)
         @old_content = old_content
         @new_content = new_content
+        @error = nil
       end
 
       def valid?

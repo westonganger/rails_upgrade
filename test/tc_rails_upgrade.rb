@@ -1,10 +1,21 @@
 #!/usr/bin/env ruby -w
 require 'yaml'
 require 'minitest'
-require 'lib/rearmed.rb'
+require 'rails_upgrade'
 
-puts "sort_by: #{["1.1","1.11","1.2","1.22"].sort_by{|x| x}}"
-puts "natural_sort_by: #{["1.1","1.11","1.2","1.22"].natural_sort_by{|x| Rearmed.naturalize_str(x)}}"
+args = [File.join(File.dirname(__FILE__), 'test_app')]
+
+`cp -rf #{File.join(File.dirname(__FILE__), 'tdr_orig')} #{args.first}`
+
+puts RailsUpgrade::Syntax.convert_hash_to_version('2.1', args)
+puts RailsUpgrade::Rails3To4.convert_finders(args)
+puts RailsUpgrade::Rails3To4.convert_association_conditions(args)
+puts RailsUpgrade::Rails3To4.convert_scopes(args)
+
+puts RailsUpgrade::Rails3To4.locate_action_mailer_method(args)
+puts RailsUpgrade::Rails3To4.locate_update_attributes_method(args)
+puts RailsUpgrade::Rails3To4.locate_missing_habtm_join_table(args)
+puts RailsUpgrade::FindUnused.partials(args)
 
 =begin
 

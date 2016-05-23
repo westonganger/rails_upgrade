@@ -1,4 +1,4 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     module Translator
       class Base < Ruby2Ruby
@@ -11,8 +11,10 @@ module RailsCleaner
           leading_whitespace = nil
           sexp =
             if klass_or_str.is_a?(String)
-              klass_or_str =~ /^(\s+)/
-              leading_whitespace = $1
+              #klass_or_str =~ /^(\s+)/
+              leading_whitespace = klass_or_str.match(/^(\s+)/)
+              leading_whitespace = leading_whitespace[0] unless leading_whitespace.nil?
+
               self.parse(klass_or_str)
             else
               klass_or_str

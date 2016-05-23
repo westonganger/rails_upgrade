@@ -1,4 +1,4 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     module Translator
       class Options < Base

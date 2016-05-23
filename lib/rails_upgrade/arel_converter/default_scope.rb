@@ -1,4 +1,4 @@
-module RailsCleaner
+module RailsUpgrade
   module ArelConverter
     class DefaultScope < Base
 
@@ -8,7 +8,7 @@ module RailsCleaner
       end
 
       def process_line(line)
-        new_scope = RailsCleaner::ArelConverter::Translator::DefaultScope.translate(line)
+        new_scope = RailsUpgrade::ArelConverter::Translator::DefaultScope.translate(line)
         new_scope.gsub(/default_scope\((.*)\)$/, 'default_scope \1')
       end
 

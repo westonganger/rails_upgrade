@@ -1,4 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/lib/rails_cleaner/version.rb')
+require File.join(File.dirname(__FILE__), 'lib/rails_upgrade/version.rb')
 require 'bundler/gem_tasks'
 
 task :test do 

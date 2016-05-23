@@ -6,4 +6,4 @@ end
 
 require 'rails_cleaner'
 require 'rail_cleaner/cli'
-RailsCleaner::CLI.start
+RailsUpgrade::CLI.start
