@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = 'rails_upgrade'
   s.version     =  RailsUpgrade::VERSION
   s.author	= "Weston Ganger"
-  s.email       = 'westonganger@gmail.com'
+  s.email       = 'weston@westonganger.com'
   s.homepage 	= 'https://github.com/westonganger/rails_upgrade'
   
   s.summary     = "Command line tool for cleaning up & upgrading Rails applications"
